@@ -305,9 +305,6 @@ main {
     /* position: absolute; */
     height: 100vh;
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     font-size: 10vw;
     padding: 5px;
     font-family: span, serif;
@@ -380,6 +377,12 @@ main {
 
 .tiles__line {
     display: flex;
+    transition: .5s;
+    flex: 1;
+}
+
+.tiles__line:hover {
+    flex: 1 1 50%
 }
 
 .tiles--columns .tiles__line {
@@ -495,6 +498,7 @@ main {
     padding-top: 10vh;
     align-items: flex-start;
     justify-content: flex-start;
+    z-index: 1;
 }
 
 .tiles__title--right {
@@ -657,4 +661,15 @@ html.has-scroll-dragging {
     to {
         margin-left: 0%;
     }
+}
+
+.box {
+    transition: 1s;
+}
+
+.box:hover {
+    transform: scale(1.3);
+    /* background: #ff800a; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px #000;
 }
