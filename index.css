@@ -377,12 +377,12 @@ main {
 
 .tiles__line {
     display: flex;
-    transition: .5s;
+    transition: .1s;
     flex: 1;
 }
 
 .tiles__line:hover {
-    flex: 1 1 50%
+    flex: 1 1 10%
 }
 
 .tiles--columns .tiles__line {
